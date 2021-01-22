@@ -8,19 +8,5 @@
 			<c:if test="${sessionScope.user==null}"><li class="nav-item"><a id="login" href="#">Login</a></li></c:if>
 			<c:if test="${sessionScope.user==null}"><li class="nav-item"><a id="signup" href="#">SignUp</a></li></c:if>
 		</ul>
-			<c:set var="var" value="2"/>
-			<c:choose>
-			<c:when test="${var==2 }">
-			<c:out value="hai"/>
-			</c:when>
-			<c:when test="${var>2 }">
-			<c:out value="haiiii"/>
-			</c:when>
-			</c:choose>
-		<c:forEach items="${count }" var="item"  varStatus="varstatus">
- 		<c:if test="${varstatus.first}">
-		<c:out value="${varstatus.index }"/>
-		</c:if>
-		</c:forEach>
 </nav>
 </body>
